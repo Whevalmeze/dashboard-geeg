@@ -16,10 +16,13 @@ export default function Home() {
         <div className="p-5 flex gap-3">
           <Trends />
           <div>
-            <Card title={"Total Order"}  />
+            <Card reversed={false} icon={"/box-tick.svg"} chart={"/order-trend.svg"} title={"Total Order"} value={350} isProfit={true} />
+            <Card reversed={true} icon={"/box-arrow.svg"} chart={"/refund-trend.svg"} title={"Total Refund"} value={270} isProfit={false} />
+            <Card reversed={false} icon={"/cart.svg"} chart={"/sales-trend.svg"} title={"Average Sales"} value={1567} isProfit={false} />
+            <Card reversed={true} icon={"/coin.svg"} chart={"/income-trend.svg"} title={"Total Income"} value={"$350,000"} isProfit={true} />
           </div>
         </div> 
-        <div className="p-5 flex gap-3">
+        <div className="p-5 pt-0 flex gap-3">
           <Orders />
         </div>    
       </div>
