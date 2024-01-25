@@ -78,7 +78,7 @@ export default function Navbar () {
                               width={24}
                               height={24}
                               priority
-                              onClick={()=> {setTheme("dark"); setGreenPosition(45)}}
+                              onClick={()=> {setTheme("light"); setGreenPosition(45)}}
                               />
                              <Image
                               src="/moon-1.svg"
@@ -87,7 +87,7 @@ export default function Navbar () {
                               width={24}
                               height={24}
                               priority
-                              onClick={()=> {setTheme("light"); setGreenPosition(5)}}
+                              onClick={()=> {setTheme("dark"); setGreenPosition(5)}}
                               />
                          </div>
                  </div>
