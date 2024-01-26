@@ -14,20 +14,16 @@ export default function Home() {
       <Sidebar/>
       <div className="w-full">
         <Navbar/> 
-        <div className="w-full">
-          <div className="p-5 flex gap-3 w-full">
-            <Trends className="h-full w-full" />
-            <div className="grid grid-cols-2 max-w-[40%] grid-rows-2 gap-3">
+        <div className="w-full gap-y-5 gap-x-4 px-4 py-5 grid grid-cols-5 grid-rows-2">
+            <Trends />
+            <div className="grid grid-cols-2 gap-3 w-full col-start-4 col-end-6">
               <Card reversed={false} icon={"/box-tick.svg"} chart={"/order-trend.svg"} title={"Total Order"} value={350} isProfit={true} />
               <Card reversed={true} icon={"/box-arrow.svg"} chart={"/refund-trend.svg"} title={"Total Refund"} value={270} isProfit={false} />
               <Card reversed={false} icon={"/cart.svg"} chart={"/sales-trend.svg"} title={"Average Sales"} value={1567} isProfit={false} />
               <Card reversed={true} icon={"/coin.svg"} chart={"/income-trend.svg"} title={"Total Income"} value={"$350,000"} isProfit={true} />
             </div>
-          </div>
-          <div className="p-5 pt-0 flex gap-3 w-full">
-            <Orders className="w-full h-full"/>
-            <Platform className="max-w-[40%]" />
-          </div>
+            <Orders />
+            <Platform />
         </div>
       </div>
     </main>

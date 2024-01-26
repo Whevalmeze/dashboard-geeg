@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Trends () {
     return (
-            <div className="flex border border-[#edf2f7] bg-white py-4 px-5 rounded-[14px] w-[60%]"> 
+            <div className="flex col-start-1 col-end-4 border border-[#edf2f7] bg-white w-full py-4 px-5 rounded-[14px]"> 
                 <div className="flex justify-between w-full items-start">
                     <h2 className="font-bold">Sales Trend</h2>
                     <div className="flex items-center gap-2">
