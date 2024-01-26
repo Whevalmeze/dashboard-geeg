@@ -8,7 +8,7 @@ export default function Navbar () {
     const {theme, setTheme} = useTheme()
     const [greenPosition, setGreenPosition] = useState(5)
     return(
-        <div className="py-5 h-dvh w-[80px] bg-[#f7f8fa] dark:bg-[#26282c] flex flex-col justify-between border-r border-r-[#ebecf2] dark:border-r[#f7f8fa]">
+        <div className="py-5 h-dvh max-w-[5.7%] w-full bg-[#f7f8fa] dark:bg-[#26282c] flex flex-col justify-between border-r border-r-[#ebecf2] dark:border-r[#f7f8fa]">
                  <div className="flex gap-5 flex-col justify-between items-center">
                      <Image
                       src="/logo.svg"
