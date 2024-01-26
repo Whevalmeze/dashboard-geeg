@@ -6,15 +6,17 @@ import Trends from "./component/Trends";
 import Orders from "./component/Orders";
 import Card from "./component/Card";
 import Platform from "./component/Platform";
-
+import { useTheme } from "next-themes";
+ 
 export default function Home() {
+  const {theme, setTheme} = useTheme()
   return (
     <ThemeProvider attribute="class">
-    <main className="m-0 flex w-full h-full">
+    <main className="m-0 transition-all dark:bg-[] dark:text-[#e5e5e5] flex w-full h-full">
       <Sidebar/>
-      <div className="w-full">
+      <div className="w-full ml-[80px]">
         <Navbar/> 
-        <div className="w-full gap-y-5 gap-x-4 px-4 py-5 grid grid-cols-5 grid-rows-2">
+        <div className="w-full gap-y-5 gap-x-4 px-4 py-5 grid items-start grid-cols-5 grid-rows-2">
             <Trends />
             <div className="grid grid-cols-2 gap-3 w-full col-start-4 col-end-6">
               <Card reversed={false} icon={"/box-tick.svg"} chart={"/order-trend.svg"} title={"Total Order"} value={350} isProfit={true} />

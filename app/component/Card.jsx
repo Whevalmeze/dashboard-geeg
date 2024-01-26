@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Card ({icon, chart, title, value, isProfit, reversed }) {
     return (
-        <div className="bg-white rounded-[14px] max-h-fit border w-full flex flex-col gap-2.5 p-4 border-[#edf2f7] ">
+        <div className="rounded-[14px] bg-white dark:bg-inherit min-w-[207px] max-h-fit border w-full flex flex-col gap-2.5 p-4 border-[#edf2f7] ">
             <div>
                 { reversed ?
                    <div className="flex justify-between ">
@@ -24,7 +24,7 @@ export default function Card ({icon, chart, title, value, isProfit, reversed }) 
                 <p className="text-lg text-[#898989]">{title}</p>
                 <p className="text-2xl text-[#3a3451] font-semibold">{value}</p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2.5 items-center text-sm">
                 <div className={`${isProfit ? "bg-[#e6f8f4]" : "bg-[#fcead9]" }  px-2 py-1 text-[#606060] rounded-full flex gap-1`}>
                     <Image src={`${isProfit ? "/trending-up.svg" : "/trending-down.svg"}`} width={12} height={12} />
                         <span className={`${isProfit  ? "text-[#34caa5" : "text-[#ed544e]"} text-xs`} >
