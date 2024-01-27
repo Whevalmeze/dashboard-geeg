@@ -1,5 +1,5 @@
 import Image from "next/image"
-import MyChart from "./MyChart";
+import MyApexChart from "./MyApexChart"
 
 export default function Trends () {
     return (
@@ -14,8 +14,8 @@ export default function Trends () {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-full">
-                    <MyChart />
+                <div className="w-full h-full flex flex-col items-center justify-center max-w-full max-h-full">
+                    <MyApexChart />
                 </div>
             </div>
     )
