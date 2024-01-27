@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gradientColorStops: (theme) => ({
+        ...theme('colors'),
+        'transparent': 'transparent',
+      }),
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

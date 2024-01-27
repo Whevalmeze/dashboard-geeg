@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Card ({icon, chart, title, value, isProfit, reversed }) {
     return (
-        <div className="rounded-[14px] bg-white dark:bg-inherit min-w-[207px] max-h-fit border w-full flex flex-col gap-2.5 p-4 border-[#edf2f7] ">
+        <div className="rounded-[14px] dark:border-[#262626] bg-white dark:bg-[#171717] min-w-[207px] max-h-fit border w-full flex flex-col gap-2.5 p-4 border-[#edf2f7] ">
             <div>
                 { reversed ?
                    <div className="flex justify-between ">

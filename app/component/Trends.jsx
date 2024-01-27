@@ -1,8 +1,9 @@
 import Image from "next/image"
+import MyChart from "./MyChart";
 
 export default function Trends () {
     return (
-            <div className="flex col-start-1 col-end-4 row-start-1 row-span-2 h-[408px] border bg-white dark:bg-inherit border-[#edf2f7] w-full py-4 px-5 rounded-[14px]"> 
+            <div className="flex w-full lg:max-w-[60%] flex-col col-start-1 col-end-4 row-start-1 row-span-2 h-[408px] border bg-white dark:bg-[#171717] border-[#edf2f7] dark:border-[#262626] py-4 px-5 rounded-[14px]"> 
                 <div className="flex text-lg justify-between w-full items-start">
                     <h2 className="font-bold">Sales Trend</h2>
                     <div className="flex cursor-pointer items-center gap-2">
@@ -12,6 +13,9 @@ export default function Trends () {
                             <Image src="/arrow-down.svg" width={20} height={20}/>
                         </div>
                     </div>
+                </div>
+                <div className="w-full h-full">
+                    <MyChart />
                 </div>
             </div>
     )

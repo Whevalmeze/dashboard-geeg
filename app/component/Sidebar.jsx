@@ -41,7 +41,7 @@ export default function Navbar () {
         ]
 
     return(
-        <div className="py-5 h-dvh max-w-[80px] fixed w-full bg-[#f7f8fa] dark:bg-[#0d062d] flex flex-col justify-between border-r border-r-[#ebecf2] dark:border-r[#f7f8fa]">
+        <div className="py-5 h-dvh max-w-[80px] fixed w-full bg-[#f7f8fa] dark:bg-[#0d062d] dark:border-[#262626] hidden lg:flex flex-col justify-between border-r border-r-[#ebecf2] dark:border-r[#f7f8fa] ">
                  <div className="flex gap-7 lg:h-1/2 flex-col justify-between items-center">
                      <Image
                         src= "/logo.svg"
@@ -73,12 +73,12 @@ export default function Navbar () {
 
                         
                      </div>
-                         <div className="bg-white p-2 flex flex-col relative items-center gap-4 rounded-full">
+                         <div className="bg-white p-2 flex flex-col relative dark:bg-[#262626] items-center gap-4 rounded-full">
                             <div className={`rounded-full ${theme === "light" ? "bg-[#34caa5]" : "bg-none"} flex items-center justify-center w-[30px] transition-all h-[30px] z-0`}>
                                 <Image
                                 src="/brightness.svg"
                                 alt=""
-                                className={`${theme === "light" ? "" : "invert"} cursor-pointer`}
+                                className={`cursor-pointer`}
                                 width={24}
                                 height={24}
                                 priority
