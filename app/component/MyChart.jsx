@@ -34,7 +34,7 @@ const MyChart = () => {
       ref={chartRef}
       className='w-full'
       width="800px"
-      height={374}
+      height={280}
     ></canvas>
   );
 };

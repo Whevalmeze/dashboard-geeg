@@ -30,7 +30,7 @@ export default function Card ({icon, chart, title, value, isProfit, reversed }) 
                         <span className={`${isProfit  ? "text-[#34caa5" : "text-[#ed544e]"} text-xs`} >
                             23.5%
                         </span> 
-                </div> :
+                </div>
                     vs. previous month
             </div>
         </div>
