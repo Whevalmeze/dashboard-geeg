@@ -1,5 +1,5 @@
-export default function Bar ({color, amount, title, percent}) {
-    const width = `w-[${percent +45}%]`
+export default function Bar ({color, amount, width, title, percent}) {
+    // const width = `w-[${percent +45}%]`
     return (
         <div className="flex flex-col gap-4">
             <p className="text-bol font-semibold">{title}</p>

@@ -7,67 +7,71 @@ import { useState } from "react"
 export default function Navbar () {
     const {theme, setTheme} = useTheme()
     const [greenPosition, setGreenPosition] = useState(5)
+    const icons =  [
+                    {
+                        src: "/category.svg",
+                        className: "dark:invert",
+                        active: true
+                    },
+                    {
+                        src: "/trend-up.svg",
+                        className: "",
+                        active: false
+                    },
+                    {
+                        src: "/profile-2user.svg",
+                        className: "",
+                        active: false
+                    },
+                    {
+                        src: "/box.svg",
+                        className: "",
+                        active: false
+                    },
+                    {
+                        src: "/discount-shape.svg",
+                        className: "",
+                        active: false
+                    },
+                    {
+                        src: "/info-circle.svg",
+                        className: "",
+                        active: false
+                    }
+        ]
+
     return(
         <div className="py-5 h-dvh max-w-[80px] fixed w-full bg-[#f7f8fa] dark:bg-[#0d062d] flex flex-col justify-between border-r border-r-[#ebecf2] dark:border-r[#f7f8fa]">
-                 <div className="flex gap-5 flex-col justify-between items-center">
+                 <div className="flex gap-7 lg:h-1/2 flex-col justify-between items-center">
                      <Image
-                      src="/logo.svg"
-                      alt="Brand Logo"
-                      className=""
-                      width={40}
-                      height={40}
-                      priority
+                        src= "/logo.svg"
+                        alt="Brand Logo"
+                        className=""
+                        width={40}
+                        height={40}
+                        priority
                                  />
                      
                      <div className="flex flex-col items-center gap-4">
-                         <Image
-                          src="/category.svg"
-                          alt=""
-                          className="dark:invert"
-                          width={24}
-                          height={24}
-                          priority
+                        {
+                            icons.map(({src, className, active}) => (
+                                <div className="relative cursor-pointer">
+                                    <Image
+                                        src={src}
+                                        alt=""
+                                        className={className}
+                                        width={24}
+                                        height={24}
+                                        priority
                                      />
-                         <Image
-                          src="/trend-up.svg"
-                          alt=""
-                          className=""
-                          width={24}
-                          height={24}
-                          priority
-                                     />
-                         <Image
-                          src="/profile-2user.svg"
-                          alt=""
-                          className=""
-                          width={24}
-                          height={24}
-                          priority
-                                     />
-                         <Image
-                          src="/box.svg"
-                          alt=""
-                          className=""
-                          width={24}
-                          height={24}
-                          priority
-                                     />
-                         <Image
-                          src="/discount-shape.svg"
-                          alt=""
-                          className=""
-                          width={24}
-                          height={24}
-                          priority
-                                     />
-                         <Image
-                          src="/info-circle.svg"
-                          alt=""
-                          className=""
-                          width={24}
-                          height={24}
-                          priority
-                                     />
+                                     {
+                                        active? <Image src="/active-bar.svg" className="absolute right-[-27px] top-[2px]" width={3} height={21} /> : null
+                                    }
+                                </div>
+                            ))
+                        }
+
+                        
                      </div>
                          <div className="bg-white p-2 flex flex-col relative items-center gap-4 rounded-full">
                             <div className={`rounded-full ${theme === "light" ? "bg-[#34caa5]" : "bg-none"} flex items-center justify-center w-[30px] transition-all h-[30px] z-0`}>
@@ -98,7 +102,7 @@ export default function Navbar () {
                      <Image
                       src="/arrow-right.svg"
                       alt=""
-                      className=""
+                      className="cursor-pointer"
                       width={24}
                       height={24}
                       priority
@@ -106,7 +110,7 @@ export default function Navbar () {
                      <Image
                       src="/setting-2.svg"
                       alt=""
-                      className=""
+                      className="cursor-pointer"
                       width={24}
                       height={24}
                       priority
@@ -114,7 +118,7 @@ export default function Navbar () {
                      <Image
                       src="/logout.svg"
                       alt=""
-                      className=""
+                      className="cursor-pointer"
                       width={24}
                       height={24}
                       priority

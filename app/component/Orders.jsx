@@ -41,7 +41,7 @@ export default function Orders () {
         
     ]
     return (
-            <div className="flex flex-col gap-[14px] bg-white dark:bg-inherit row-span-3 row-start-4 col-start-1 col-end-4 border border-[#edf2f7] py-4 px-5 rounded-[14px]"> 
+            <div className="flex flex-col gap-[14px] bg-white dark:bg-inherit row-span-3 row-start-3 col-start-1 col-end-4 border border-[#edf2f7] py-4 px-5 rounded-[14px]"> 
                 <div className="flex justify-between w-full text-lg items-start">
                     <h2 className="font-bold">Last Orders</h2>
                     <div className="flex cursor-pointer items-center text-[#34caa5] gap-2">

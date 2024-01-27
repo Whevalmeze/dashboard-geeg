@@ -12,7 +12,7 @@ export default function Home() {
   const {theme, setTheme} = useTheme()
   return (
     <ThemeProvider attribute="class">
-    <main className="m-0 transition-all dark:bg-[] dark:text-[#e5e5e5] flex w-full h-full">
+    <main className="m-0 transition-all box-border dark:bg-[] dark:text-[#e5e5e5] flex w-full h-full">
       <Sidebar/>
       <div className="w-full ml-[80px]">
         <Navbar/> 
