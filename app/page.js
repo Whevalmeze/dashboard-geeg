@@ -16,9 +16,9 @@ export default function Home() {
       <Sidebar/>
       <div className="w-full ml-[80px]">
         <Navbar/> 
-        <div className="w-full gap-y-5 gap-x-4 px-4 py-5 grid items-start grid-cols-5 grid-rows-2">
+        <div className="w-full gap-y-5 gap-x-4 px-4 py-5 grid items-start grid-cols-5 grid-rows-5">
             <Trends />
-            <div className="grid grid-cols-2 gap-3 w-full col-start-4 col-end-6">
+            <div className="grid grid-cols-2 gap-3 w-full row-start-1 row-span-2 col-start-4 col-end-6">
               <Card reversed={false} icon={"/box-tick.svg"} chart={"/order-trend.svg"} title={"Total Order"} value={350} isProfit={true} />
               <Card reversed={true} icon={"/box-arrow.svg"} chart={"/refund-trend.svg"} title={"Total Refund"} value={270} isProfit={false} />
               <Card reversed={false} icon={"/cart.svg"} chart={"/sales-trend.svg"} title={"Average Sales"} value={1567} isProfit={false} />
