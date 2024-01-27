@@ -41,7 +41,7 @@ export default function Orders () {
         
     ]
     return (
-            <div className="flex w-full flex-col lg:max-w-[60%] gap-[14px] dark:border-[#262626] bg-white dark:text-[#eee] dark:bg-[#171717] row-span-3 row-start-3 col-start-1 col-end-4 border border-[#edf2f7] py-4 px-5 rounded-[14px]"> 
+            <div className="flex w-full h-fit flex-col lg:max-w-[60%] gap-[14px] dark:border-[#262626] bg-white dark:text-[#eee] dark:bg-[#171717] row-span-3 row-start-3 col-start-1 col-end-4 border border-[#edf2f7] py-4 px-5 rounded-[14px]"> 
                 <div className="flex justify-between w-full text-lg items-start">
                     <h2 className="font-bold">Last Orders</h2>
                     <div className="flex cursor-pointer items-center text-[#34caa5] gap-2">
@@ -64,7 +64,7 @@ export default function Orders () {
                                         <Image src={src} width={32} height={32} />{name}
                                     </div></td>
                                     <td className="text-[#737373]">{date}</td>
-                                    <td className="text-[#0D062D] dark:text-[#eee] font-medium text">{amount}</td>
+                                    <td className="text-[#0D062D] dark:text-[#eee] font-semibold text">{amount}</td>
                                     <td className={`${status === "Paid" ? "text-[#34CAA5]" : "text-[#ED544E]" }`}>{status}</td>
                                     <td>
                                         <div className="flex gap-1">

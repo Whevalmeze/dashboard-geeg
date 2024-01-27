@@ -19,7 +19,7 @@ export default function Home() {
         <div className="w-full gap-y-5 gap-x-4 px-4 py-5 flex flex-col items-start ">
             <div className="w-full flex gap-4 flex-col-reverse lg:flex-row">
               <Trends />
-              <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:max-w-[40%] gap-3 w-full row-start-1 row-span-2 col-start-4 col-end-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:max-w-[40%] gap-3 row-start-1 row-span-2 col-start-4 col-end-6">
                 <Card reversed={false} icon={"/box-tick.svg"} chart={"/order-trend.svg"} title={"Total Order"} value={350} isProfit={true} />
                 <Card reversed={true} icon={"/box-arrow.svg"} chart={"/refund-trend.svg"} title={"Total Refund"} value={270} isProfit={false} />
                 <Card reversed={false} icon={"/cart.svg"} chart={"/sales-trend.svg"} title={"Average Sales"} value={1567} isProfit={false} />

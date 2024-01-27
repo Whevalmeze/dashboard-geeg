@@ -34,7 +34,7 @@ export default function Navbar () {
                         <span>Justin Begerson</span>
                         <span className="text-[#787486]">justin@gmail.com</span>
                     </div>
-                    <Image src="/arrow-down.svg" className="cursor-pointer" width={20} height={20} />
+                    <Image src="/arrow-down.svg" className="cursor-pointer dark:invert" width={20} height={20} />
                 </div>
             </div>
         </nav>
