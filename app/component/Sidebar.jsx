@@ -53,23 +53,29 @@ export default function Navbar () {
                                  />
                      
                      <div className="flex flex-col items-center gap-4">
-                        {
-                            icons.map(({src, className, active}, id) => (
-                                <div key={id} className="relative cursor-pointer">
-                                    <Image
-                                        src={src}
-                                        alt="be"
-                                        className={className}
-                                        width={24}
-                                        height={24}
-                                        priority
-                                     />
-                                     {
-                                        active? <Image src="/active-bar.svg"  alt="be"  className="absolute right-[-27px] top-[2px]" width={3} height={21} /> : null
-                                    }
-                                </div>
-                            ))
-                        }
+                     {
+  icons.map(({ src, className, active }, id) => (
+    <div key={id} className="relative cursor-pointer">
+      <Image
+        src={src}
+        alt="be"
+        className={className}
+        width={24}
+        height={24}
+        priority
+      />
+      {active ? (
+        <Image
+          src="/active-bar.svg"
+          alt="be"
+          className="absolute right-[-27px] top-[2px]"
+          width={3}
+          height={21}
+        />
+      ) : null}
+    </div>
+  ))
+}
 
                         
                      </div>
