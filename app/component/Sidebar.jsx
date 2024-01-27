@@ -54,8 +54,8 @@ export default function Navbar () {
                      
                      <div className="flex flex-col items-center gap-4">
                         {
-                            icons.map(({src, className, active}) => (
-                                <div className="relative cursor-pointer">
+                            icons.map(({src, className, active}, id) => (
+                                <div key={id} className="relative cursor-pointer">
                                     <Image
                                         src={src}
                                         alt="be"
