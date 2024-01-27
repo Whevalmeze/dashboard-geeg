@@ -58,14 +58,14 @@ export default function Navbar () {
                                 <div className="relative cursor-pointer">
                                     <Image
                                         src={src}
-                                        alt=""
+                                        alt="be"
                                         className={className}
                                         width={24}
                                         height={24}
                                         priority
                                      />
                                      {
-                                        active? <Image src="/active-bar.svg" className="absolute right-[-27px] top-[2px]" width={3} height={21} /> : null
+                                        active? <Image src="/active-bar.svg"  alt="be"  className="absolute right-[-27px] top-[2px]" width={3} height={21} /> : null
                                     }
                                 </div>
                             ))
@@ -77,7 +77,7 @@ export default function Navbar () {
                             <div className={`rounded-full ${theme === "light" ? "bg-[#34caa5]" : "bg-none"} flex items-center justify-center w-[30px] transition-all h-[30px] z-0`}>
                                 <Image
                                 src="/brightness.svg"
-                                alt=""
+                                alt="be"
                                 className={`cursor-pointer`}
                                 width={24}
                                 height={24}
@@ -88,7 +88,7 @@ export default function Navbar () {
                             <div className={`rounded-full ${theme !== "light" ? "bg-[#34caa5] text-white" : "bg-none"} flex items-center justify-center w-[30px] transition-all h-[30px] z-0`}>
                                 <Image
                                 src="/moon-1.svg"
-                                alt=""
+                                alt="be"
                                 className={`${theme === "light" ? "" : "invert"} cursor-pointer z-10`}
                                 width={24}
                                 height={24}
@@ -101,7 +101,7 @@ export default function Navbar () {
                 <div className="flex flex-col gap-4 items-center">
                      <Image
                       src="/arrow-right.svg"
-                      alt=""
+                      alt="be"
                       className="cursor-pointer"
                       width={24}
                       height={24}
@@ -109,7 +109,7 @@ export default function Navbar () {
                                  />
                      <Image
                       src="/setting-2.svg"
-                      alt=""
+                      alt="be"
                       className="cursor-pointer"
                       width={24}
                       height={24}
@@ -117,7 +117,7 @@ export default function Navbar () {
                                  />
                      <Image
                       src="/logout.svg"
-                      alt=""
+                      alt="be"
                       className="cursor-pointer"
                       width={24}
                       height={24}

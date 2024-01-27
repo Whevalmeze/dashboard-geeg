@@ -10,7 +10,7 @@ export default function Trends () {
                         <span>Sort by:</span>
                         <div className="flex gap-2.5 px-3 py-2 rounded-3xl items-center border border-[#E1DFDF]">
                             <span className="font-light text-xs">Weekly</span>
-                            <Image src="/arrow-down.svg" width={20} height={20}/>
+                            <Image src="/arrow-down.svg" alt="be" width={20} height={20}/>
                         </div>
                     </div>
                 </div>
