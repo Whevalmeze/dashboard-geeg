@@ -6,10 +6,8 @@ import Trends from "./component/Trends";
 import Orders from "./component/Orders";
 import Card from "./component/Card";
 import Platform from "./component/Platform";
-import { useTheme } from "next-themes";
  
 export default function Home() {
-  const {theme, setTheme} = useTheme()
   return (
     <ThemeProvider attribute="class">
     <main className="m-0 transition-all box-border dark:bg-[#262626] dark:text-[#e5e5e5] flex w-full h-full">
