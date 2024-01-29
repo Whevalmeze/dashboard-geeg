@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Chart from "react-apexcharts";
 
 const MyApexChart = () => {
-    if (typeof window !== 'undefined') {
       const [state, setState] = useState({
         options: {
           chart: {
@@ -44,7 +43,6 @@ const MyApexChart = () => {
           },
         ],
       });
-    }
   return (
     <div className="app w-full flex flex-col items-center justify-center">
       <div className="row w-full flex flex-col items-center justify-center">
