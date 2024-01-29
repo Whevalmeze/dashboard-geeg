@@ -2,16 +2,17 @@
 import Image from "next/image"
 import { useState } from "react"
 export default function Navbar () {
-    const [searchValue, setSearchValue] = useState();
-    const currentDate = new Date();
+        if (typeof window !== 'undefined') {
+            const [searchValue, setSearchValue] = useState();
+            const currentDate = new Date();
 
-    const options = {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-    };
-
-    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+            const options = {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+            };
+            const formattedDate = currentDate.toLocaleDateString('en-US', options);
+        }
     return (
         <nav className="flex justify-between dark:bg-[#171717] dark:border-[#262626] border-b border-b-[#e5eaef] py-[18px] px-5 gap-5 items-center">
                 <Image className="block lg:hidden" alt="be"  src="/logo.svg" width={28} height={28} />
