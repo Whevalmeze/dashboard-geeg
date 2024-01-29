@@ -6,7 +6,6 @@ import Trends from "./component/Trends";
 import Orders from "./component/Orders";
 import Card from "./component/Card";
 import Platform from "./component/Platform";
-import { useTheme } from "next-themes";
  
 export default function Home() {
   return (
