@@ -1,3 +1,4 @@
+"use client"
 export default function Bar ({color, amount, title, width, percent}) {
     // const w = `w-[${percent + 40}%]`
     return (
