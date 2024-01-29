@@ -61,14 +61,14 @@ export default function Orders () {
                             transactions.map(({src, name, date, amount, status}, index) => (
                                 <tr className={`border-t w-full dark:text-[#eee] border-[#edf2f6] pt-3 pb-4 h-16`} key={index}>
                                     <td className="text-[#0D062D] dark:text-[#eee] font-medium"><div className="flex items-center gap-2.5">
-                                        <Image src={src} alt="be"  width={32} height={32} />{name}
+                                        <Image src={src} alt=""  width={32} height={32} />{name}
                                     </div></td>
                                     <td className="text-[#737373]">{date}</td>
                                     <td className="text-[#0D062D] dark:text-[#eee] font-semibold text">{amount}</td>
                                     <td className={`${status === "Paid" ? "text-[#34CAA5]" : "text-[#ED544E]" }`}>{status}</td>
                                     <td>
                                         <div className="flex gap-1">
-                                            <Image src="/document-download.svg" alt="be"  width={16} height={16} />
+                                            <Image src="/document-download.svg" alt=""  width={16} height={16} />
                                             View
                                         </div>
                                     </td>

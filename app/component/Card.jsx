@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 
 
@@ -7,16 +8,16 @@ export default function Card ({icon, chart, title, value, isProfit, reversed }) 
             <div>
                 { reversed ?
                    <div className="flex justify-between ">
-                        <Image  alt="be" src={chart} width={104} height={32} />
+                        <Image  alt="" src={chart} width={104} height={32} />
                         <div className="flex items-center justify-center w-10 h-10 border border-[] rounded-full">
-                            <Image src={icon} width={24} height={24} />
+                            <Image alt="" src={icon} width={24} height={24} />
                         </div>
                     </div> :
                     <div className="flex justify-between ">
                         <div className="flex items-center justify-center w-10 h-10 border border-[] rounded-full">
-                        <Image alt="be"  src={icon} width={24} height={24} />
+                        <Image alt=""  src={icon} width={24} height={24} />
                         </div>
-                            <Image  alt="be" src={chart} width={104} height={32} />
+                            <Image  alt="" src={chart} width={104} height={32} />
                     </div>
                 }
             </div>
@@ -26,7 +27,7 @@ export default function Card ({icon, chart, title, value, isProfit, reversed }) 
             </div>
             <div className="flex gap-2.5 items-center text-sm">
                 <div className={`${isProfit ? "bg-[#e6f8f4]" : "bg-[#fcead9]" }  px-2 py-1 text-[#606060] rounded-full flex gap-1`}>
-                    <Image alt="be"  src={`${isProfit ? "/trending-up.svg" : "/trending-down.svg"}`} width={12} height={12} />
+                    <Image alt=""  src={`${isProfit ? "/trending-up.svg" : "/trending-down.svg"}`} width={12} height={12} />
                         <span className={`${isProfit  ? "text-[#34caa5" : "text-[#ed544e]"} text-xs`} >
                             23.5%
                         </span> 
